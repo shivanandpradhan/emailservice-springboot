@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Template for HTML Email</title>
-</head>
-<body>
-    <p>
-        Hi <span th:text="${name}"></span>,
-    </p>
-    <p>
-        Let's use thyme leaf for sending email.
-    </p>
-</body>
+    <style>
+      p {
+        color: black;
+        font-style: italic;
+      }
+      h3{
+        color: purple;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Hi <span th:text="${name}"></span>,</h3>
+    <p>Let's use thyme leaf for sending email.</p>
+  </body>
 </html>
